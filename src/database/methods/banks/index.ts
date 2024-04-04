@@ -3,7 +3,7 @@ import { GetAllBanks, GetOneBank } from "./BankProtocols";
 import { MongoHelper } from "../../helpers";
 import { toBankObject } from "./helper";
 import { Banks } from "src/entities/Banks";
-import BanksModel from "src/databse/models/BanksModel";
+import BanksModel from "src/database/models/BanksModel";
 
 export class BanksMethods implements GetAllBanks, GetOneBank {
   async getAll(): Promise<Banks[]> {
